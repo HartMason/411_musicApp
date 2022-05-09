@@ -35,3 +35,17 @@
   color: grey;
   margin-left: 500px;
 }
+
+.volumeInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.qualityInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}

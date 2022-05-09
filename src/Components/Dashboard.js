@@ -55,10 +55,18 @@ export const Dashboard = (props) => {
         )}
 
         {volume >= 80 && (
-            <p>
+            <p className="volumeInfo">
                 Listening to music at a high volume could cause long-term hearing loss.
             </p>
         )}
+
+        {quality ==  1 && (
+            <p className="qualityInfo">
+                Music sounds better on High Quality. 
+            </p>
+        )}
+
+
       </div>
     </div>
   );
