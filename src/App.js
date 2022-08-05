@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {isLoggedIn ? <Dashboard /> : <Signup />}
+      {isLoggedIn ? <Dashboard /> : <Signup/>}
     </div>
   );
 }
