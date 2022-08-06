@@ -5,12 +5,12 @@ import { Signup } from "./Components/Signup";
 import Header from "./Components/Header";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="App">
       <Header />
-      {isLoggedIn ? <Dashboard /> : <Signup/>}
+      {isLoggedIn ? <Dashboard /> : <Signup loginHandler={setIsLoggedIn}/>}
     </div>
   );
 }
