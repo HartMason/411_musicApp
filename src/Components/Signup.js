@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./Login.css";
 
 export const Signup = ({ loginHandler }) => {
   const [userName, setUserName] = useState("");
@@ -16,13 +17,13 @@ export const Signup = ({ loginHandler }) => {
   };
 
   const handleSubmit = (e) => {
-    console.log(e)
-    e.preventDefault()
-    loginHandler(true)
-  }
+    console.log(e);
+    e.preventDefault();
+    loginHandler(true);
+  };
 
   return (
-    <>
+    <div className="login">
       <form onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
@@ -30,6 +31,7 @@ export const Signup = ({ loginHandler }) => {
           value={userName}
           onChange={handleChange}
         />
+
         <input
           type="password"
           name="password"
@@ -38,7 +40,7 @@ export const Signup = ({ loginHandler }) => {
         />
         <button type="submit">Login</button>
       </form>
-    </>
+    </div>
   );
 };
 
