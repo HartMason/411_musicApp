@@ -22,6 +22,8 @@ export const Signup = ({ loginHandler }) => {
     loginHandler(true);
   };
 
+  //JSX
+
   return (
     <div className="login">
       <form onSubmit={(e) => handleSubmit(e)}>
